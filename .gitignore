@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 # Created by https://www.toptal.com/developers/gitignore/api/node
 # Edit at https://www.toptal.com/developers/gitignore?templates=node
 
 ### Node ###
+=======
+>>>>>>> b7416e7080b38ecee147c0f845e9b2047ed94933
 # Logs
 logs
 *.log
@@ -106,6 +109,7 @@ dist
 
 # vuepress v2.x temp and cache directory
 .temp
+.cache
 
 # Docusaurus cache and generated files
 .docusaurus
