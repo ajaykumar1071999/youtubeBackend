@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 # Created by https://www.toptal.com/developers/gitignore/api/node
 # Edit at https://www.toptal.com/developers/gitignore?templates=node
 
 ### Node ###
-=======
->>>>>>> b7416e7080b38ecee147c0f845e9b2047ed94933
 # Logs
 logs
 *.log
@@ -45,9 +42,11 @@ bower_components
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
-# Dependency directories
+# Node artifact files
+build/
 node_modules/
-jspm_packages/
+dist/
+
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
