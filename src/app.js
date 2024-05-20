@@ -3,7 +3,9 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 
 const app = express();
-
+app.get("/", (req, res) => {
+  res.status(200).json("server started");
+});
 app.use(
   cors({
     origin: process.env.CORS_ORIGIN,
