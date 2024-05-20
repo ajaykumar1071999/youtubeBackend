@@ -26,11 +26,11 @@ const userSchema = new Schema(
     },
     avatar: {
       type: String, //Cloudinary URL
-      required: true,
+      required: false,
     },
     coverImage: {
       type: String, //Cloudinary URL
-      required: true,
+      required: false,
     },
     watchHistory: [{ type: Schema.Types.ObjectId, ref: "Video" }],
     password: {
@@ -48,7 +48,7 @@ const userSchema = new Schema(
 
 userSchema.pre("save", async function (next) {
   if (!this.isModified("password")) return next();
-  this.password = bcrypt.hash(this.password, 10);
+  this.password = await bcrypt.hash(this.password, 10);
   next();
 });
 //password compare
