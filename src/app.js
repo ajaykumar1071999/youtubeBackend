@@ -19,7 +19,12 @@ app.use(express.static("public"));
 app.use(cookieParser());
 
 // import routes
+
 import userRouter from "./routes/user.routes.js";
+import subscriptionRouter from "./routes/subscription.routes.js";
+import commentRouter from "./routes/comment.routes.js";
 
 app.use("/api/v1/users", userRouter);
+app.use("/api/v1/subscriptions", subscriptionRouter);
+app.use("/api/v1/comments", commentRouter);
 export default app;
